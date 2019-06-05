@@ -1,0 +1,268 @@
+>>> .editorShow {
+  position: relative;
+}
+>>> .editorShow p,
+>>> .editorShow span,
+>>> .editorShow a {
+  font-size: 14px;
+  line-height: 2.2em;
+}
+>>> .editorShow p {
+  margin: 8px;
+}
+>>> .editorShow img {
+  margin: 0 3px;
+  position: relative;
+  bottom: -3px;
+  max-width: 100%;
+}
+>>> .editorShow a {
+  cursor: pointer;
+}
+>>> .editorShow a::before {
+  content: '链接跳转';
+  display: inline-block;
+  font-size: 12px;
+  color: #fff;
+  padding: 3px 5px;
+  line-height: 1.6em;
+  border-radius: 0.2em;
+  background-color: rgba(142, 204, 69, 1);
+  margin: 0 3px 0 5px;
+  position: relative;
+  cursor: pointer;
+  transition: all .3s;
+  top: -1px;
+}
+>>> .editorShow a:hover::before {
+  background-color: rgba(255, 153, 0, 1);
+}
+>>> .editorShow table{
+  border-top: 1px solid rgba(200, 200, 200, 0.8);
+  border-left: 1px solid rgba(200, 200, 200, 0.8);
+  border-radius: 5px;
+  position: relative;
+  margin: 5px 0;
+}
+>>> .editorShow tbody{
+  max-width: 750px;
+  position: relative;
+  font-size: 12px;
+  line-height: 2.6em;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  overflow-x: scroll;
+}
+>>> .editorShow table td,
+>>> .editorShow table th {
+  min-width: 6em;
+  max-width: 300px;
+  color: #555;
+  border-right: 1px solid rgba(200, 200, 200, 0.8);
+  border-bottom: 1px solid rgba(200, 200, 200, 0.8);
+  padding: 3px 5px;
+  position: relative;
+}
+>>> .editorShow table td img,
+>>> .editorShow table th img{
+  max-width: 100% !important;
+}
+>>> .editorShow table th {
+  color: #333;
+  border-bottom: 2px solid rgba(200, 200, 200, 0.8);
+  background-color: rgba(204, 204, 204, 0.25);
+  text-align: center;
+}
+>>> .editorShow table tr:hover {
+  background-color: rgba(204, 204, 204, 0.1);
+}
+>>> .editorShow .codeContain {
+  display: block;
+  position: relative;
+}
+>>> .editorShow pre {
+  position: relative;
+  overflow: auto;
+  background-color: #333;
+  border-radius: 5px;
+}
+/*复制按钮*/
+>>> .editorShow .codeContain>.copyContent-btn {
+  font-size: 10px;
+  color: #999;
+  background-color: #fff;
+  border-radius: 3px;
+  line-height: 2em;
+  padding: 0 7px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  display: none;
+  transition: all .3s;
+}
+>>> .editorShow .codeContain:hover>.copyContent-btn {
+  display: inline-block;
+}
+>>> .editorShow .codeContain>.copyContent-btn:hover {
+  color: #333;
+}
+>>> .editorShow code {
+  display: block;
+  font-size: 12px !important;
+  color: #f8f8f2;
+  background-color: unset;
+  border-left: 4px solid  rgba(87, 87, 87, 1);
+  position: relative;
+  transition: all .3s;
+  margin: 0;
+}
+>>> .editorShow code:hover {
+  border-left: 4px solid  rgba(142, 204, 69, 0.8);
+}
+/*>>> .editorShow code::before {*/
+  /*width: 18px;*/
+  /*height: 100%;*/
+  /*content: '代码区';*/
+  /*color: rgba(215, 215, 215, 0.2);*/
+  /*background-color: rgba(255, 255, 255, 0.2);*/
+  /*padding: 0 2px;*/
+  /*line-height: 1.2em;*/
+  /*position: absolute;*/
+  /*top: 0;*/
+  /*left: 0;*/
+  /*white-space: normal;*/
+/*}*/
+>>> .editorShow blockquote {
+  display: block;
+  border-radius: 3px;
+  padding: 5px 15px;
+  margin: 5px 10px 5px 10px;
+  font-size: 13px;
+  line-height: 2em;
+  /*background-color: rgba(228, 228, 228, 0.8);*/
+  border: 1px solid rgba(228, 228, 228, 0.8);
+  border-left: 4px solid  rgba(142, 204, 69, 0.8);
+  transition: all .3s;
+}
+>>> .editorShow ol,
+>>> .editorShow ul{
+  font-size: 12px;
+  line-height: 2em;
+  padding-left: 15px;
+}
+>>> .editorShow ul {
+  list-style: initial;
+}
+>>> .editorShow .ud-question-box {
+  width: 100%;
+  font-size: 14px;
+  line-height: 2.5em;
+  padding: 0 20px;
+  background-color: rgba(228, 228, 228, 0.3);
+  border: 1px solid rgba(228, 228, 228, 0.8);;
+  border-bottom: 2px solid rgba(142, 204, 69, 0.8);
+  border-radius: 10px;
+  margin: 10px 0;
+  overflow: hidden;
+}
+>>> .editorShow .ud-question-box a {
+}
+>>> .editorShow .ud-question-box a::before {
+  display: none;
+}
+>>> .editorShow .ud-question-box-no {
+  font-weight: 600;
+  margin-right: 30px;
+  color: rgba(142, 204, 69, 0.8);
+}
+>>> .editorShow .ud-question-box-title {
+  color: #666;
+}
+>>> .editorShow .ud-question-box-content p{
+  font-size: 10px !important;
+  line-height: 2em;
+  color: rgba(102, 102, 102, 0);
+  padding: 0 5px;
+  border-top: 1px solid rgba(228, 228, 228, 0);
+  margin: 0 20px 0 -2px;
+  transition: all .5s;
+  max-height: 0px;
+}
+>>> .ud-question-box:hover .ud-question-box-content p {
+  max-height: 110px;
+  color: rgba(102, 102, 102, 1);
+  padding: 5px;
+}
+>>> .ud-question-box:hover .ud-question-box-content p:first-child {
+  border-top: 1px solid rgba(228, 228, 228, 0.8);
+}
+>>> .editorShow .ud-question-box .icon-right-arrow {
+  font-size: 12px;
+  float: right;
+  color: #999;
+  position: relative;
+  bottom: -3px;
+}
+>>> .editorShow .ud-question-box a:hover .icon-right-arrow {
+  color: rgba(142, 204, 69, 0.8);
+}
+>>> .editorShow .ud-question-box a:hover .ud-question-box-title {
+  color: #333;
+}
+
+/*回复评论显示区的样式设置*/
+>>> .ud-editor-message {
+  padding-right: 20px;
+}
+>>> .ud-editor-message .ud-question-box {
+  max-width: 100%;
+  border: 1px solid rgba(228, 228, 228, 0.8);
+}
+>>> .ud-editor-message .ud-question-box:hover .ud-question-box-content p {
+  max-height: 0px;
+  padding: 0 5px;
+  color: rgba(102, 102, 102, 0);
+}
+>>> .ud-editor-message .ud-question-box:hover .ud-question-box-content p:first-child {
+  border-top: 1px solid rgba(228, 228, 228, 0);
+}
+
+/*右侧窄信息栏*/
+>>> .ud-editor-rightFrame p {
+  font-size: 12px;
+  line-height: 1.5em;
+  margin: 5px;
+}
+>>> .ud-editor-rightFrame .ud-question-box-no::after {
+  content: '链接';
+  font-size: 14px;
+  line-height: 2.5em;
+  font-weight: 300;
+  color: #666;
+  padding-left: 20px;
+}
+>>> .ud-editor-rightFrame .ud-question-box:hover .ud-question-box-no::after {
+  color: #333;
+}
+>>> .ud-editor-rightFrame .ud-question-box-title {
+  display: none;
+}
+>>> .ud-editor-rightFrame .ud-question-box {
+  max-width: 85%;
+  border: 1px solid rgba(228, 228, 228, 0.8);
+}
+>>> .ud-editor-rightFrame .ud-question-box:hover .ud-question-box-content p {
+  max-height: 0px;
+  padding: 0 5px;
+  color: rgba(102, 102, 102, 0);
+}
+/*帖子新消息展示*/
+>>> .ud-editor-repContent *{
+  display: none;
+}
+>>> .ud-editor-repContent p,
+>>> .ud-editor-repContent span,
+>>> .ud-editor-repContent img{
+  display: inline;
+}
